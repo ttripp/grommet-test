@@ -3,15 +3,11 @@ kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
-  creationTimestamp: 2016-11-08T22:51:58Z
   generation: 2
   labels:
     run: grommet-test
   name: grommet-test
   namespace: default
-  resourceVersion: "3590501"
-  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/grommet-test
-  uid: f421a70a-a605-11e6-b4b6-42010af00158
 spec:
   replicas: 1
   selector:
@@ -29,7 +25,7 @@ spec:
         run: grommet-test
     spec:
       containers:
-      - image: us.gcr.io/fun-project-146321/grommet-test:v9
+      - image: us.gcr.io/fun-project-146321/grommet-test:v10
         imagePullPolicy: IfNotPresent
         name: grommet-test
         ports:
