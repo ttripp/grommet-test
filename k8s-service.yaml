@@ -7,10 +7,10 @@ metadata:
   namespace: default
 spec:
   ports:
-  - port: 80
+  - port: 3015
     protocol: TCP
     targetPort: 3000
   selector:
     run: grommet-test
   sessionAffinity: None
-  type: LoadBalancer
+  type: NodePort
